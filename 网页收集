@@ -4,3 +4,22 @@ http://c.biancheng.net/cpp/view/2736.html
 http://www.jb51.net/article/50642.htm
 AWK进行浮点数计算
 http://www.cnblogs.com/chengmo/archive/2010/09/30/1839556.html
+
+
+
+awk 'BEGIN{print 7.01>4.01 }';
+awk 'BEGIN{print 7.01*5-4.01 }'
+
+
+#!/bin/sh
+val=`echo '1001'`
+echo $val
+result=`expr $val - 20`
+echo $result
+if [ $(awk 'BEGIN{print 7.01<4.01 }') -eq 0 ];then
+  echo "result is great than 70"
+fi
+a=10
+b=20.1
+e1=`expr $a / $b`
+echo $e1
